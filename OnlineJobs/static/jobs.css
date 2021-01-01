@@ -1,0 +1,15 @@
+.row .col-xl-4{
+	font-family:Comic Sans MS;
+	border: 2px dotted green;
+	background-color:#5eedd9;
+
+}
+
+.row
+{
+    margin-top:90px;
+}
+
+body{
+    background-color: #154668;
+}

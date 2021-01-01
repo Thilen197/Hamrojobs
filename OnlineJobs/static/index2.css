@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+	background-image: linear-gradient(120deg,#3498db,#000000);
+    background-image: url(image/form.jpg);
+}
+.offset:before {
+    height: 3.8rem;
+    margin-top: -3.8rem;
+    content: "";
+    display: block;
+
+
+}
+
+.container{
+	background-color: #dc3545;
+	margin-top: 40px;
+	
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, .6)!important;
+
+
+}
+h3, .h3 {
+    font-size: 40px;
+    color: #ff8800;
+    }
+.btn-dark {
+  color: #e68c1c;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+
+.stats{
+text-align: center;
+background: url(../image/.jpg) no-repeat center;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+-ms-background-size: cover;
+min-height: 300px;
+margin-bottom: -28px;
+color: snow;
+}
+
+.navbar-brand {
+    color: #1cabe6;
+}
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ff8d00;
+    padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #1cabe6;
+}
+
+
+.carousel-item{
+    height: 100vh;
+    
+}
+.narrow {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.btn-md {
+    border-width: medium;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+.login-container {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: montserrat;
+    min-height: 120vh;
+    box-sizing: border-box;
+}
+
+.login-form {
+    width: 360px;
+    background: #fff4f4;
+    height: 630px;
+    padding: 50px 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 56%;
+    transform: translate(-50%,-50%);
+
+}
+
+.login-form h1{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.jobs-container {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: montserrat;
+    min-height: 120vh;
+    box-sizing: border-box;
+	
+}
+a{
+	color:#ff6a00;
+	
+}
+
+.jobs-form {
+    width: 360px;
+    background: #fff4f4;
+    height: 630px;
+    padding: 50px 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 56%;
+    transform: translate(-50%,-50%);
+
+}
+
+.jobs-form h1{
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.txtb {
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin: 30px 0;
+    font-size: larger;
+}
+
+.txtb input {
+    font-size: 15px;
+    color: #333;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 40px;
+
+}
+
+.txtb span::before{
+    content: attr(data-placeholder);
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #203c27;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: .5s;
+}
+
+.txtb span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(120deg,#3498db,#8e44ad);
+    transition: .5s;
+    margin-left: -280px;
+    margin-top: 40px;
+}
+
+.focus + span::before {
+    top: -5px;
+}
+.focus + span::after {
+    width: 100%;
+}
+.logbtn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: linear-gradient(120deg,#000000,#923300,#ec5107);
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: default;
+    transition: .5s; 
+}
+
+
+.login:hover {
+    background-position: right;
+}
+
+.bottom-text {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 19px;
+
+}
+
+
+
+.carousel-caption{
+    position: absolute;
+    top: 25%;
+    text-transform: uppercase;
+    width: 100%;
+    right: 0;
+    left: 0;
+    color: orange;
+}
+.carousel-caption h1{
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+    color: #ff9900;
+}
+.carousel-caption h3{
+    font-size: 2rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 1.6rem;
+    color: #ff9900;
+
+}
+
+.card .card-body .fas {
+    height: 50px;
+    width: 100%;
+}
+
+.btn-lg {
+    border-width: medium;
+    border-radius: 0;
+    font-size: 1.1rem;
+}
+
+.jumbotron {
+    border-radius: 0;
+    padding: 3rem 0 2rem;
+    margin-bottom: -27px;
+	margin-top: -21px;
+    color: #a7f77e;
+    background: white;
+}
+
+}
+.row.no-gape{
+  margin: 0;
+}
+.row.no-gape > div{
+  padding: 0;
+}
+
+
+.h3.heading {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 1.9rem;
+
+}
+.heading-underline {
+    width: 3rem;
+    height:.2rem;
+    background-color: #lebba3;
+    margin: 0 auto 2rem;
+}
+
+.Categories img{
+    max-width: 100%;
+    transition: transform .5s ease;
+}
+.row.no-padding. [class*=col-] {
+    padding: 0;
+}
+.Categories img:hover {
+    transform: scale(1.1);
+    cursor: zoom-in;
+}
+.Categories {
+    overflow: hidden;
+}
+.card {
+    margin: 2rem;
+}
+.card-body{
+	
+	background-color: black;
+	
+}
+.Categories > a {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+b{
+	color: white;
+	
+}
+
+.Categories > a i {
+    float: left;
+    width: 100%;
+    color: #8b91dd;
+    font-size: 70px;
+    margin-top: 30px;
+}
+.Categories > a span {
+    float: left;
+    width: 100%;
+    font-family: Quicksand;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 18px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.sub-para {
+padding: 0em 12em 2.5em;
+}
+.state-us h2 {
+font-size: 36px;
+color: #000;
+text-transform:uppercase;
+font-weight:600;
+}
+.icons ul li{
+display: inline-block;
+}
+.icons ul li a{
+color: #fff;
+}
+.icons ul li a span{
+font-size: 15px;
+line-height: 35px;
+text-align: center;
+color:#fff;
+transition: 0.5s all;
+-webkit-transition: 0.5s all;
+transition: 0.5s all;
+-moz-transition: 0.5s all;
+}
+.icons ul li .footer-bg:hover{
+background:#777;
+}
+.bottom-para p a:hover{color:#56a076;}
+.wthree-left-right h4 {
+font-size: 20px;
+color: #ffffff;
+font-weight: 400;
+padding-bottom: 21px;
+letter-spacing: 2px;
+}
+footer{background:#000;}
+footer p {
+padding: 0.8em 0;
+text-align: center;
+font-size: 14px;
+color: #fff;
+letter-spacing: 2.5px;
+}
+footer p a {
+color:#0a63bd;
+}
+footer p a:hover {
+color:#fff;
+}
+a.move-top {
+width: 40px;
+height: 40px;
+background: url(../image/arrow.png) no-repeat 0px 0px;
+display: inline-block;
+}
+
+.svg{
+	height: 34px;
+	width: 36px;
+	
+	
+}
+
+.fill-all-form input[type="email"] {
+width: 50%;
+background:#f5f5f5;
+border: 1px solid #cecbcb;
+padding: .8em .7em;
+border-radius: 0px;
+outline: none ;
+font-size: 15px;
+display: inline-block;
+}
+.click-me {
+width:25%;
+font-size: 15px;
+color: #fff;
+text-decoration: none;
+text-transform: capitalize;
+display: inline-block;
+letter-spacing: 2px;
+background-color:#0a63bd;
+outline: none;
+padding: 12px 13px;
+border: 1px solid #d4d4d4;
+border-radius: 0px;
+transition: 0.5s all;
+-webkit-transition: 0.5s all;
+transition: 0.5s all;
+-moz-transition: 0.5s all;
+cursor:pointer;
+}
+.click-me:hover{Opacity:0.8;
+}

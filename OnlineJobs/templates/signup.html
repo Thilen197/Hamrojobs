@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <title>HAMRO ONLINE JOBS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="{% static 'logo.png' %}">
+  <link rel="stylesheet" href="{% static 'bootstrap.css' %}" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="{% static 'index2.css' %}">
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive" >
+
+<div id="home">
+ <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="/"><b>Hamro Online Jobs</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="showjobs">Employers</a>
+      </li>
+         <li class="nav-item">
+        <a class="nav-link" href="user_login">Candidates</a>
+      </li>
+	      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+        <a class="dropdown-item" href="homebased">HOME-BASED JOBS</a>
+        <a class="dropdown-item" href="technical">TECHNICAL JOBS</a>
+        <a class="dropdown-item" href="field">FIELD JOBS</a>
+          <a class="dropdown-item" href="delivery">DELIVERY JOBS</a>
+          <a class="dropdown-item" href="hotel">HOTEL-LINE JOBS</a>
+        <a class="dropdown-item" href="office">OFFICE JOBS</a>
+        <a class="dropdown-item" href="educational">EDUCATIONAL JOBS</a>
+
+
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="others">OTHER JOBS</a>
+        </div>
+      </li>
+
+
+
+      <li class="nav-item">
+        <a class="nav-link" href="showjobs">
+          <button class="btn btn-dark" button type="submit">Jobs</button>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="user_signup">
+          <button class="btn btn-dark" button type="submit">Signup</button>
+
+        </a>
+      </li>
+      {% if user.is_authenticated %}
+        <li class="nav-item">
+        <a class="nav-link" href="logout">
+          <button class="btn btn-dark" button type="submit">Logout</button>
+        </a>
+      </li>
+        {% else %}
+      <li class="nav-item">
+        <a class="nav-link" href="user_login">
+          <button class="btn btn-dark" button type="submit">Login</button>
+        </a>
+      </li>
+        {% endif %}
+      
+    </ul>
+   
+  </div>
+  
+ </nav>
+</div>
+
+
+
+
+<main>
+ <div class="login-container">
+
+  <div class="login-form">
+    <h1>Sign Up</h1>
+    <form method="post" action="/user_signup">
+      {% csrf_token %}
+        <div class="txtb">
+          <input type="text" name="username">
+          <span data-placeholder="Username"></span>
+        </div>
+        <div class="txtb">
+          <input type="Contact" name="contactnumber">
+          <span data-placeholder="Contact Number"></span>
+        </div>
+        <div class="txtb">
+          <input type="email" name="email">
+          <span data-placeholder="Email"></span>
+        </div>
+        <div class="txtb">
+          <input type="password" name="password">
+          <span data-placeholder="Password"></span>
+        </div>
+        <div class="txtb">
+          <input type="password" name="reenterpassword">
+          <span data-placeholder="Re-enter Password"></span>
+        </div>
+        <input type="submit" class="logbtn" value="Signup">
+        <div class="bottom-text">
+          Get Started!!!
+
+        </div>
+
+      </form>
+
+  </div>
+
+  
+
+</div>
+
+</main>
+
+<footer>
+      <div class="footer-bottom py-lg-4 py-3 text-center">
+        <p>©2021 Hamro Online Jobs. All Rights Reserved | Design by <a href="http://www.W3Layouts.com" target="_blank">Thilen Lama</a></p>
+        <div class="icons text-center mt-3">
+          <ul>
+               <a href="" target="_blank"><i class="fab fa-facebook-square"></i></a>
+				<a href="" target="_blank"><i class="fab fa-twitter-square"></i></a>
+				<a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+          </ul>
+        </div>
+        <!-- move-top -->
+        <div class="text-center">
+          <a href="#home" class="move-top text-center mt-3"></a>
+        </div>
+        <!--//move-top -->
+      </div>
+    </footer>
+
+
+<script type="text/javascript">
+   $(".txtb input").on("focus",function(){
+    $(this).addClass("focus")
+  });
+
+  $(".txtb input").on("blur",function(){
+    if ($(this).val() == "")
+    $(this).addClass("focus")
+  });
+</script>
+
+<script src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"></script>
+
+
+</body>
+</html>
